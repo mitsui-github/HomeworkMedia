@@ -1,0 +1,14 @@
+<h1>HomeworkMedia</h1>
+<h3>新規宿題</h3>
+<%= form_for @upload do |u| %>
+  <div class="field">
+    <%= u.label :科目 %>
+    <%= u.text_field :subject, :size => 50 %>
+    <%= u.label :内容 %>
+    <%= u.text_field :content, :size => 50 %>
+    <%= u.label :設定時間 %>
+    <%= u.datetime_field :deadline, :size => 50 %>
+  </div>
+  <%= u.submit "宿題を追加する" %>
+<% end %>
+<%= link_to "宿題一覧に戻る", uploads_path %>

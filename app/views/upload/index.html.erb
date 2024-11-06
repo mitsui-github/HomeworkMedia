@@ -1,0 +1,34 @@
+<div class="container">
+  <h1>HomeworkMedia</h1>
+  <h3>あなたの宿題一覧</h3>
+  <%= link_to "宿題を追加する", upload_new_path, class: "button" %>
+  
+  <div class="upload-container">
+    <% @uploads.each do |u| %>
+      <div class="upload">
+        <strong>科目:</strong> <%= u.subject %><br>
+        <strong>内容:</strong> <%= u.content %><br>
+        <strong>締切:</strong> <%= u.deadline %><br>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<!-- JavaScriptにデータを渡す -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // UploadのデータをJavaScriptで使いやすい形式に変換
+    const deadlines = [
+      <% @uploads.each do |upload| %>
+        {
+          subject: "<%= upload.subject %>",
+          time: "<%= upload.deadline.strftime('%Y-%m-%dT%H:%M:%S') %>",
+          notified: false  // 通知済みかどうかのフラグ
+        },
+      <% end %>
+    ];
+
+    // 定期的にチェックを開始
+    startDeadlineChecker(deadlines);
+  });
+</script>

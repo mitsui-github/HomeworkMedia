@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject: MyString
+  deadline: 2024-10-26 18:01:01
+
+two:
+  subject: MyString
+  deadline: 2024-10-26 18:01:01

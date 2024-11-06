@@ -1,0 +1,139 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* 青色を基調としたスタイル */
+body {
+    background-color: #f0f8ff; /* アクアブルーの背景色 */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #007acc; /* メインの青色 */
+    background-color: #e0f7fa; /* ライトブルーの背景 */
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 0;
+  }
+  
+  h3 {
+    color: #007acc; /* メインの青色 */
+    margin-bottom: 20px;
+  }
+  
+  .upload-container {
+    background-color: #31D7A8; /* 白の背景色 */
+    border: 1px solid #b0bec5; /* グレーのボーダー */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  .upload {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #080808; /* グレーの下線 */
+  }
+  
+  .upload strong {
+    color: #007acc; /* メインの青色 */
+  }
+  
+  a {
+    color: #007acc; /* メインの青色のリンク */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button, .button {
+    background-color: #007acc; /* メインの青色 */
+    color: #ffffff; /* 白文字 */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  button:hover, .button:hover {
+    background-color: #005fa3; /* 濃い青に変更 */
+  }
+  
+  /* フォーム全体のスタイル */
+
+
+
+  form {
+    background-color: #e0f7fa; /* ライトブルーの背景 */
+    border: 1px solid #b0bec5; /* グレーのボーダー */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* フォームの幅を70%に調整（必要に応じて調整可能） */
+    max-width: 700px; /* 最大幅を500pxに設定 */
+    margin-left: 0; /* 左揃えに設定 */
+  }
+
+  
+  /* フォーム内のラベルのスタイル */
+  form .field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007acc; /* メインの青色 */
+  }
+  
+  /* フォーム内の入力フィールドのスタイル */
+  form .field input[type="text"],
+  form .field input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b0bec5; /* グレーのボーダー */
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* フォームの送信ボタンのスタイル */
+  form input[type="submit"] {
+    background-color: #007acc; /* メインの青色 */
+    color: #ffffff; /* 白文字 */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #005fa3; /* 濃い青に変更 */
+  }
+  
+  /* 戻るリンクのスタイル */
+  .link-back {
+    color: #007acc; /* メインの青色のリンク */
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  
+  .link-back:hover {
+    text-decoration: underline;
+  }
+  
